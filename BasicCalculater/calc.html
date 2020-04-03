@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculater</title>
+    <link rel ="stylesheet" href="calcStyle.css">
+
+</head>
+<body>
+    <script src="calc.js"></script>
+    <h1>A Basic Calculater Application</h1>
+    <p id="display">meep</p>
+    <button onclick="allClear()">AC</button>
+    <button>+/-</button>
+    <button>%</button>
+    <button onclick="clickOp('/')">/</button> <br>
+
+    <button onclick="clickNum(7)">7</button>
+    <button onclick="clickNum(8)">8</button>
+    <button onclick="clickNum(9)">9</button>
+    <button onclick="clickOp('x')">x</button> <br>
+
+    <button onclick="clickNum(4)">4</button>
+    <button onclick="clickNum(5)">5</button>
+    <button onclick="clickNum(6)">6</button>
+    <button onclick="clickOp('-')">-</button> <br>
+
+    <button onclick="clickNum(1)">1</button>
+    <button onclick="clickNum(2)">2</button>
+    <button onclick="clickNum(3)">3</button>
+    <button onclick="clickOp('+')">+</button> <br>
+
+    <button  onclick="clickNum(0)" class="bigButton">0</button>
+    <button>.</button>
+    <button onclick="clickEq()">=</button> <br>
+
+    <p id="testing">Test area: </p>
+
+
+</body>
+</html>

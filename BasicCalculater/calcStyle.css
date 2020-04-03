@@ -1,0 +1,17 @@
+.bigButton {
+    width: 108px;
+}
+
+button {
+    border-radius: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    background-color: greenyellow;
+    height: 50px;
+    width: 50px;
+}
+
+p {
+    background-color: greenyellow ;
+    height: 50px;
+    width: 300px;
+}
