@@ -14,7 +14,7 @@ body {
       color: rgba(255,255,255,.85);
   }
   #container { 
-      padding-top: 50px;
+      padding-top: 20px;
   }
   #content {
       max-width: 43em;
@@ -25,7 +25,7 @@ body {
       font-size: 2.8em;
       font-weight: 100;
       /* text-transform: uppercase; */
-      /* margin: 0; */
+      margin-bottom: 0cm;
   }
   h3 {
       font-size: 1.4em;
@@ -69,9 +69,9 @@ body {
     width:0px; height:0px;
     
     position:relative;  
-    -webkit-perspective:1200px;
+    -webkit-perspective:12000px;
     -webkit-perspective-origin:50% 50%;
-    perspective:1200px;
+    perspective:12000px;
     perspective-origin:50% 50%;
   }
   .pyramid3d {
@@ -81,8 +81,8 @@ body {
     
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform: rotateX(75deg) rotate(65deg);
-    transform: rotateX(75deg) rotate(65deg);
+    -webkit-transform: rotateX(75deg) rotateZ(90deg) rotate(65deg); /* 65 */
+    transform: rotateX(75deg) rotateZ(90deg) rotate(65deg);
     -webkit-animation: turnPyramid 10s linear infinite;
     animation: turnPyramid 10s linear infinite;
   }
@@ -97,20 +97,39 @@ body {
     position: absolute;
     height: 0; width: 0;
     border-style: solid;
-    border-width: 176px 75px 0 75px;
+    /* border-width controls relative size of triangles */
+    border-width: 130px 75px 0 75px;  
   }
-  .side1 { -webkit-transform: translatex(0) rotatey(115.2deg) rotatez(90deg); transform: translatex(0) rotatey(115.2deg) rotatez(90deg); }
-  .side2 { -webkit-transform: translatex(150px) rotatez(90deg) rotatex(64.8deg); transform: translatex(150px) rotatez(90deg) rotatex(64.8deg); }
-  .side3 {  -webkit-transform: translatez(0) rotatex(64.8deg); transform: translatez(0) rotatex(64.8deg); }
-  .side4 { -webkit-transform: translatey(150px) rotatex(115.2deg); transform: translatey(150px) rotatex(115.2deg); }
+  /* .side1 { -webkit-transform: translatex(0) rotatey(115.2deg) rotatez(90deg); transform: translatex(0) rotatey(115.2deg) rotatez(90deg); }
+  .side2 { -webkit-transform: translatex(0) rotatey(0) rotatez(0); transform: translatex(0) rotatey(0) rotatez(0); }
+  .side3 { -webkit-transform: translatex(150px) rotatey(0) rotatez(0); transform: translatex(150px) rotatey(0) rotatez(0); }
+  .side4 { -webkit-transform: translatex(0) rotatey(115.2deg) rotatez(0); transform: translatex(0) rotatey(115.2deg) rotatez(0); } */
+
+  .side1 { -webkit-transform: translatex(0) rotatey(125.2deg) rotatez(90deg); transform: translatex(0) rotatey(125.2deg) rotatez(90deg); }
+  .side2 { -webkit-transform: translatex(150px) rotatez(90deg) rotatex(54.8deg); transform: translatex(150px) rotatez(90deg) rotatex(54.8deg); }
+  .side3 { -webkit-transform: translatez(0) rotatex(54.8deg); transform: translatez(0) rotatex(54.8deg); }
+  .side4 { -webkit-transform: translatey(150px) rotatex(125.2deg); transform: translatey(150px) rotatex(125.2deg); }
+
+  .side5 { -webkit-transform: translatex(150px) rotatey(180deg) rotatez(90deg) rotatex(54.8deg); transform: translatex(00px) rotatey(180deg) rotatez(90deg) rotatex(54.8deg); }
+
+  .side6 { -webkit-transform: translatex(150px) rotatey(180deg) rotatez(90deg) rotatex(125.2deg); transform: translatex(150px) rotatey(180deg) rotatez(90deg) rotatex(125.2deg); }
+
+  .side7 { -webkit-transform: translatex(150px) rotatex(125.2deg) rotatey(180deg) rotatez(180deg); transform: translatex(0)  rotatex(-54.8deg) }
+
+  .side8 { -webkit-transform:  translatey(150px) rotatex(54.8deg) rotatez(180deg); transform: translatey(150px) translatex(150px) rotatex(54.8deg) rotatez(180deg); }
+
   .side1:before{ border-color: rgba(115, 115, 0, 0.3) transparent transparent transparent; }
   .side2:before{ border-color: rgba(20, 90, 225, 0.3) transparent transparent transparent; }
   .side3:before{ border-color: rgba(255,   0, 0, 0.3) transparent transparent transparent; } 
   .side4:before{ border-color: rgba(0, 255, 255, 0.3) transparent transparent transparent; }
+  .side5:before{ border-color: rgb(128, 0, 89, 0.3) transparent transparent transparent; }
+  .side6:before{ border-color: rgb(255, 162, 0, 0.3) transparent transparent transparent; }
+  .side7:before{ border-color: rgb(15, 115, 0, 0.3) transparent transparent transparent; } 
+  .side8:before{ border-color: rgb(255, 55, 0, 0.3) transparent transparent transparent; }
   
   
-  @-webkit-keyframes turnPyramid { 100% { -webkit-transform: rotateX(75deg) rotate(425deg); } }
-  @keyframes turnPyramid { 100% { transform: rotateX(75deg) rotate(425deg); } }
+  @-webkit-keyframes turnPyramid { 100% { -webkit-transform: rotateX(75deg) rotateZ(90deg) rotate(425deg); } } /* 425 */
+  @keyframes turnPyramid { 100% { transform: rotateX(75deg) rotateZ(90deg) rotate(425deg); } }
   
   @media (max-width: 300px) {
       html { font-size: 70%; }
