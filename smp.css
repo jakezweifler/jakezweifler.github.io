@@ -76,8 +76,8 @@ body {
   /* PYRAMID CODE */
   .stage {
     position: absolute;
-    right: 120px; /* This replaces `float: right` */
-    top: 200px; /* Adjust this value to move it down */
+    right: 110px; /* This replaces `float: right` */
+    top: 190px; /* Adjust this value to move it down */
     
     -webkit-transform: scale(0.85); /* Keep your transform scaling */
     transform: scale(0.85);
