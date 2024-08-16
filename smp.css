@@ -19,7 +19,7 @@ body {
     border: 1px solid white;  /* Customize hr if needed */
     width: 80%;  /* Adjust width to control how long the line is */
   }
-  
+
 .navbar {
   text-align: left;  /* Align tabs to the left */
   padding-left: 20px;  /* Optional: Add padding to the left for some space */
@@ -30,7 +30,7 @@ body {
   padding: 10px 15px;  /* Reduce padding for closer tabs */
   margin-right: 10px;  /* Add spacing between the tabs */
   text-decoration: none;
-  color: white;
+  color: rgb(148, 20, 20);
 }
   #container { 
       padding-top: 20px;
