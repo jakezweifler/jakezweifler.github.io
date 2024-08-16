@@ -15,8 +15,9 @@ body {
   }
 .navbar {
   padding-top: 10px;
+  padding-bottom: -40px;
   text-align: left;  /* Align tabs to the left */
-  padding-left: 20px;  /* Optional: Add padding to the left for some space */
+  padding-left: 0px;  /* Optional: Add padding to the left for some space */
 }
 
 .navbar a {
