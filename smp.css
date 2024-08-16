@@ -74,13 +74,13 @@ body {
   body { font-size: 1em;}
   
   /* PYRAMID CODE */
- 
+
   .stage {
     -webkit-transform:scale(1.85);
     transform:scale(0.85);
     float:right;
     margin-right:120px;
-    margin-top:50px;
+    margin-top:30px;
     width:0px; height:0px;
     
     position:relative;  
