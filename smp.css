@@ -14,12 +14,6 @@ body {
       color: rgba(255,255,255,.85);
   }
 
-  hr {
-    margin-top: 10px;  /* Add space between navbar and hr */
-    border: 1px solid white;  /* Customize hr if needed */
-    width: 80%;  /* Adjust width to control how long the line is */
-  }
-
 .navbar {
   text-align: left;  /* Align tabs to the left */
   padding-left: 20px;  /* Optional: Add padding to the left for some space */
@@ -27,10 +21,10 @@ body {
 
 .navbar a {
   display: inline-block;
-  padding: 5px 15px;  /* Reduce padding for closer tabs */
-  margin-right: 20px;  /* Add spacing between the tabs */
+  padding: 10px 15px;  /* Reduce padding for closer tabs */
+  margin-right: 10px;  /* Add spacing between the tabs */
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
 }
   #container { 
       padding-top: 20px;
