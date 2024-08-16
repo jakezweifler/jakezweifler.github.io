@@ -13,6 +13,14 @@ body {
       color: #eee;
       color: rgba(255,255,255,.85);
   }
+  .navbar {
+    text-align: center;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    padding: 14px 20px;
+  }
   #container { 
       padding-top: 20px;
   }
