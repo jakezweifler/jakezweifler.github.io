@@ -28,7 +28,7 @@ body {
 .navbar a {
   display: inline-block;
   padding: 10px 15px;  /* Reduce padding for closer tabs */
-  margin-right: 10px;  /* Add spacing between the tabs */
+  margin-right: 20px;  /* Add spacing between the tabs */
   text-decoration: none;
   color: rgb(148, 20, 20);
 }
