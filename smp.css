@@ -14,12 +14,16 @@ body {
       color: rgba(255,255,255,.85);
   }
   .navbar {
-    text-align: center;
+    text-align: left;  /* Align tabs to the left */
+    padding-left: 20px;  /* Optional: Add padding to the left for some space */
   }
   
   .navbar a {
     display: inline-block;
-    padding: 14px 20px;
+    padding: 10px 15px;  /* Reduce padding for closer tabs */
+    margin-right: 10px;  /* Add spacing between the tabs */
+    text-decoration: none;
+    color: white;
   }
   #container { 
       padding-top: 20px;
